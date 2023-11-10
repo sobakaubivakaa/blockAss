@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../main.js"></script>
+    <link rel="stylesheet" href="./style/index.css">
+    <title>To Do Dapp</title>
+</head>
+<body>
+    <div class = "navbar">
+        <a href="/front/index.html">Add task</a>
+        <a href="/front/tasklist.html">List Tasks</a>
+        <a href="/front/markTask.html">Mark tasks as finished</a>
+    </div>
+
+    <div class="container">
+        <h1>Welcome to the To Do Dapp</h1>
+
+        <div>
+            <button onclick="connectMetamask()">Connect Metamask</button>
+            <p id="metamasknotification"></p>
+        </div>
+
+        <form method="POST" action="/addTask" enctype="multipart/form-data">
+            <h2>Add task</h2>
+            <input type = "text" name ="task" placeholder="Add task here ... ">
+            <input type="submit" value = "Add Task">
+        </form>
+    </div>
+</body>
+</html>

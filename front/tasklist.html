@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To Do Decentralized Application</title>
+    <script src="../main.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.1.umd.min.js"
+        type="application/javascript"></script>
+    <link rel="stylesheet" href="./style/list.css">
+	<title>Centered Form</title>
+	
+</head>
+<body>
+    <div class = "navbar">
+        <a href="/front/index.html">Add task</a>
+        <a href="/front/tasklist.html">List Tasks</a>
+        <a href="/front/markTask.html">Mark tasks as finished</a>
+    </div>
+
+    <div>
+        <button onclick="connectMetamask()">Connect Metamask</button>
+        <p id="metamasknotification"></p>
+    </div>
+
+    <div>
+        <button onclick="getAllTasks()">List All Tasks</button>
+        <p id="p3"></p>
+    </div>
+
+    <div>
+        <table id="myTable">
+            <thead>
+                <tr>
+                    <th>Task ID</th>
+                    <th>Task Description</th>
+                    <th>Task Status</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

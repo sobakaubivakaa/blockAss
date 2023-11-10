@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To Do Decentralized Application</title>
+    <script src="../main.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.1.umd.min.js"
+        type="application/javascript"></script>
+    <link rel="stylesheet" href="./style/mark.css">
+	<title>Centered Form</title>
+	<style>
+	</style>
+
+</head>
+<body>
+    <div class = "navbar">
+        <a href="/front/index.html">Add task</a>
+        <a href="/front/tasklist.html">List Tasks</a>
+        <a href="/front/markTask.html">Mark tasks as finished</a>
+    </div>
+
+    <div class="container">
+        
+        <h1>Change your task status here</h1>
+
+        <form method="POST" action="/changeStatus" enctype="multipart/form-data">
+            <h3>Add the task here</h3>
+            <input type = "number" name ="id" placeholder="Add task here ... ">
+            <input type="submit" value = "Change Task Status">
+        </form>
+    </div>
+
+</body>
+</html>
